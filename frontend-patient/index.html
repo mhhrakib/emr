@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Frontend Application</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <h1 style="color: green;">Patient Application</h1>
+    <hr>
+
+    <div id="accessManagementDiv">
+        <h2>Access Management</h2>
+        <hr>
+        <span id="viewAccessDiv">
+            <form method="POST" id="viewAccessF">
+                <h3>Manage Your EMR View Access</h3>
+                <input type="email" placeholder="User Email" name="email" id="userEmail" required> <br>
+                <input type="email" placeholder="Viewer Email" name="email" id="viewerEmail" required> <br>
+                <input type="text" placeholder="EMR ID" name="EMR ID" id="emrID" required> <br>
+                <button type="submit" id="grantViewB">Grant</button>
+                <button type="submit" id="revokeViewB">Revoke</button>
+            </form>
+        </span>
+        <hr>
+        <span id="addAccessDiv">
+            <form method="POST" id="addAccessF">
+                <h3>Manage Your EMR Add Access</h3>
+                <input type="email" placeholder="User Email" name="email" id="userEmail" required> <br>
+                <input type="email" placeholder="Adder Email" name="email" id="adderEmail" required> <br>
+                <button type="submit" id="grantAddB">Grant</button>
+                <button type="submit" id="revokeAddB">Revoke</button>
+            </form>
+        </span>
+        <hr>
+    </div>
+
+
+    <div id="viewEMRDiv">
+       
+        <form id="viewEMRF" method="GET">
+            <h2>View Your EMR</h2>
+            <hr>
+            <input type="email" placeholder="User Email" name="email" id="userEmail" required> <br>
+            <input type="text" placeholder="EMR ID" name="EMR ID" id="emrID"> <br>
+            <button type="submit">View</button>
+        </form>
+        <div id="viewEMRDiv">
+            <textarea style="display: none"name="emrcontent" placeholder="After you click submit the button EMR will appear here" id="emrdata">
+            </textarea>
+        </div>
+    </div>
+    <hr>
+    <footer>EMR Storage and Sharing System using Hyperledger Fabric and Node.js by © Mohammad Habibullah Rakib</footer>
+</body>
+
+</html>

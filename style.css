@@ -1,0 +1,120 @@
+
+        Body {
+            text-align: center;
+            align-content: center;
+            font-family: Calibri, Helvetica, sans-serif;
+            background-color: wheat;
+        }
+
+        div {
+            align-content: center;
+            color: green;
+            margin-block: 0 auto;
+            display: block;
+        }
+
+        
+
+        button{
+            background-color: brown;
+            align-self: start;;
+            width: 30%;
+            color: white;
+            padding: 15px;
+            margin: 20px 20px;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+
+        form {
+            align-content: center;
+            /* border: 2px solid rgb(75, 71, 67); */
+        }
+
+        h1, h2, h3 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        input[type=text], input[type=email], 
+        input[type=password], select {
+            width:40%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 2px solid green;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            width: 60%;
+            height: 60%;
+            box-sizing: border-box;
+            border: 2px solid green;
+            font-family:  sans-serif;
+            oninput: style.height;
+
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            margin: 10px 5px;
+        }
+
+
+        .swal-modal {
+            background-color: white;
+            border: 3px solid green;
+          }
+
+          .swal-title {
+            margin: 0px;
+            font-size: 20px;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+            margin-bottom: 28px;
+          }
+
+          .swal-text {
+            background-color: #FEFAE3;
+            padding: 17px;
+            border: 1px solid #F0E1A1;
+            display: block;
+            margin: 22px;
+            text-align: center;
+            color: #61534e;
+          }
+
+          .swal-button {
+            text-align: center;
+            padding: 7px 19px;
+            border-radius: 2px;
+            background-color: purple;
+            font-size: 12px;
+            border: 1px solid #3e549a;
+            text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+          }
+          .swal-footer {
+            background-color: rgb(245, 248, 250);
+            margin-top: 32px;
+            border-top: 1px solid #E9EEF1;
+            overflow: hidden;
+          }
+        /* footer{
+            position: absolute;
+       bottom: 10;
+       height: 20px;
+       border-top-width: 2px;
+       border-top-style: solid;
+       border-top-color: purple;
+        } */
+
+        /*.container {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            align-content: center;
+            padding: 50px;
+            background-color: wheat;
+        }*/

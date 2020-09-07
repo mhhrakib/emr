@@ -1,0 +1,118 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Frontend Application</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <h1 style="color: green;">Admin Application</h1>
+    <hr>
+    <form method="POST" id="addUserF">
+        <h2 style="color: green;">Register User</h2>
+        <hr>
+        <!-- <input type="email" placeholder="Enter patient email" name="userEmail" id="userEmail" required> <br>
+        <input type="email" placeholder="Enter Lab-technician email" name="doctorEmail" id="labEmail" required> <br>
+        <input type="text" placeholder="EMR ID" name="EMR ID" id="emrID" required> <br>
+        <label>Enter the EMR </label><br>
+        <textarea name="emr" id="emr" placeholder="Enter the EMR here" required></textarea><br>
+        <button type="submit" id="addEMRB">Submit</button> -->
+        
+        <label>User Name</label> <br>
+        <input type="text" placeholder="Enter user name" name="name" id="userName"> <br>
+        <label>User Email</label><br>
+        <input type="email" placeholder="Enter user email" name="email" id="userEmail"> <br>
+        <label> Select the type of user</label><br>
+        <select id="userType" class="select-css" name="type">
+            <option value="admin">Admin</option>
+            <option value="patient">Patient</option>
+            <option value="doctor">Doctor</option>
+            <option value="lab">Lab-technician</option>
+        </select> <br>
+        <button type="submit">Register</button>
+    </form>
+
+    <hr>
+
+    <footer>EMR Storage and Sharing System using Hyperledger Fabric and Node.js by © Mohammad Habibullah Rakib</footer>
+</body>
+
+</html>
+
+    <!-- <style>
+        Body {
+            text-align: center;
+            align-content: center;
+            font-family: Calibri, Helvetica, sans-serif;
+            background-color: wheat;
+        }
+
+        /* div {
+            align-content: center;
+            color: green;
+            margin-block: 0 auto;
+            display: block;
+        } */
+
+        
+
+        button{
+            background-color: brown;
+            align-self: start;;
+            width: 30%;
+            color: white;
+            padding: 15px;
+            margin: 20px 20px;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+
+        form {
+            align-content: center;
+            /* border: 2px solid rgb(75, 71, 67); */
+        }
+
+        h1, h2, h3 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        input[type=text],
+        input[type=password], select {
+            width:40%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 2px solid green;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            width: 60%;
+            height: 60%;
+            box-sizing: border-box;
+            border: 2px solid green;
+            font-family:  sans-serif;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            margin: 10px 5px;
+        }
+
+
+        .container {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            align-content: center;
+            padding: 50px;
+            background-color: wheat;
+        }
+    </style> -->
