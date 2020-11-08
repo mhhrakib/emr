@@ -7,7 +7,7 @@ cd fabric-sample/test-network/
 
 now go to emr folder
 for each backend folder
-	delete the content of wallet directory and then run following:
+	delete the content of wallet directory (wallet directory won't exist if the application is not run once) and then run following:
 	
 	node enrollAdmin.js
 	node registerUser.js
