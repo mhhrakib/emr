@@ -1,0 +1,16 @@
+cd fabric-sample/test-network/
+
+./network.sh up createChannel -ca -s couchdb
+
+./deployCC_emr.sh
+
+
+now go to emr folder
+for each backend folder
+	delete the content of wallet directory and then run following:
+	
+	node enrollAdmin.js
+	node registerUser.js
+	node app.js
+	
+
